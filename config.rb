@@ -19,7 +19,8 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 Haml::TempleEngine.disable_option_validator!
-Haml::Template.options[:ugly] = true
+# Haml::Template.options[:ugly] = true
+
 # For custom dirs
 # set :css_dir, 'assets/stylesheets'
 # set :js_dir, 'assets/javascript'

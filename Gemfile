@@ -7,3 +7,7 @@ gem 'middleman-minify-html', '~> 3.4'
 gem 'aws-sdk', '~> 2'
 gem 'haml'
 gem 'middleman-livereload'
+
+group :development do
+  gem 'guard'
+end

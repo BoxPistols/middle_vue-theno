@@ -16,3 +16,11 @@ new Vue({
   template: '<Main/>',
   components: { Main }
 })
+
+
+document.write(
+    '<script src="http://' +
+    (location.host || 'localhost').split(':')[0] +
+    ':4567/livereload.js?snipver=1"></' +
+    'script>'
+)
