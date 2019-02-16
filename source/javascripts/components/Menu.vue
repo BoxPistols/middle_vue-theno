@@ -1,6 +1,6 @@
 <template>
 <div id="menu">
-  <radial-menu style="background-color: #d7d7ff" :itemSize="50" :radius="150" :angle-restriction="100">
+  <radial-menu style="background-color: #d7d7ff" :itemSize="50" :radius="150" :angle-restriction="90">
     <radial-menu-item v-for="(item, index) in items" :key="index" style="background-color: white" @click="() => handleClick(item)">
       <a v-bind:href="item">{{ item }}</a>
       <!-- <span>{{item}}</span> -->
