@@ -115,6 +115,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk (~> 2)
+  haml
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.8)
   middleman-minify-html (~> 3.4)
@@ -123,4 +124,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.15.2
+   1.17.3
