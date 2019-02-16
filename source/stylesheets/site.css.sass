@@ -1,0 +1,28 @@
+@charset "UTF-8"
+
+html
+  box-sizing: border-box
+  font-family: serif
+
+*
+  box-sizing: border-box
+
+  &:before, &:after
+    box-sizing: inherit
+
+body
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 100vh
+  color: #666
+  perspective: 180vmin
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif
+
+.flexbox-container
+  display: flex
+
+  .flex-box-item
+    flex-grow: 0
+
+@import particle
