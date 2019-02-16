@@ -12,7 +12,6 @@
 </template>
 
 <script>
-// import brick from './Brick.vue'
 export default {
   name: 'mainComponent',
   data() {

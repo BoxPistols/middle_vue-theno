@@ -56,6 +56,10 @@ Haml::TempleEngine.disable_option_validator!
 configure :build do
   ignore '/javascripts/components/*.vue'
   ignore '/javascripts/site.js'
-  activate :minify_css
-  activate :minify_html
+  # activate :minify_css
+  # activate :minify_html
+  activate :relative_assets
+  # アセットファイルの URL にハッシュを追加 (URL ヘルパの使用が必要)
+  activate :asset_hash
+  # activate :asset_host, :host => '//YOURDOMAIN.cloudfront.net'
 end
