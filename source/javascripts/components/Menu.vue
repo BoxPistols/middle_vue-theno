@@ -2,7 +2,7 @@
 <div id="menu">
   <radial-menu style="background-color: #d7d7ff" :itemSize="50" :radius="150" :angle-restriction="90">
     <radial-menu-item v-for="(item, index) in items" :key="index" style="background-color: white" @click="() => handleClick(item)">
-      <a v-bind:href="item">{{ item }}</a>
+      <a v-bind:href="item  + '.html' ">{{ item }}</a>
       <!-- <span>{{item}}</span> -->
     </radial-menu-item>
   </radial-menu>
@@ -25,7 +25,7 @@ export default {
   },
   data() {
     return {
-      items: ['foo', 'bar', 'hello', 'world', 'more'],
+      items: ['memo', 'bar', 'hello', 'world', 'more'],
       lastClicked: 'click on!',
       title: "Click"
     }
