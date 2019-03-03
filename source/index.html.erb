@@ -1,18 +1,26 @@
 <%# --- title: ザ脳 --- %>
-<%= javascript_include_tag "jquery.min" %>
-<!-- <div id="application-container"></div> -->
+  <%= javascript_include_tag "jquery.min" %>
+  <!-- <div id="application-container"></div> -->
 
-<!-- <div class="audio_wrap play"> <div class="inner"> <div class="audio_button">Sound Play / Off</div> <audio id="audio" src="img/universe.mp3" loop="loop"> Your Browser <code>audio</code> not Support </audio> </div> </div> -->
+  <!-- <div class="audio_wrap play"> <div class="inner"> <div class="audio_button">Sound Play / Off</div> <audio id="audio" src="img/universe.mp3" loop="loop"> Your Browser <code>audio</code> not Support </audio> </div> </div> -->
 
-<!-- Dev -->
-<div id="menu-container"></div>
+  <!-- Dev -->
+  <div id="menu-container"></div>
 
-<div id="main-container"></div>
+  <div id="main-container"></div>
 
-<div id="button-container"></div>
+  <div id="button-container"></div>
 
-<%= partial :particle %>
-<%= partial :particle %>
+  <%= partial :particle %>
+  <%= partial :particle %>
 
-<footer>ザ脳 by <a href="https://twitter.com/asagiridesign" target="_blank">Atsushi Ito</a> / <a href="https://agd.tokyo" target="_blank">朝霧
-デザイン</a></footer>
+  <div class="infoArea">
+    <p>
+      本サービス内では、ページデータの保存が必要なアプリはローカルストレージ技術を採用しており、クリックだけで完全削除も可能になっています。 お使いのPCかつお使いのブラウザのみに保存されるデータですので、サーバ側は何も取得していませんので個人用に、コミュニケーション用に幅広くお使いください。</p>
+  </div>
+
+  <footer>ザ脳 by
+    <a href="https://twitter.com/asagiridesign" target="_blank">Atsushi Ito</a>
+    /
+    <a href="https://agd.tokyo" target="_blank">朝霧 デザイン</a>
+  </footer>
