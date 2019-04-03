@@ -55,7 +55,7 @@ export default {
     cursor: pointer;
     .vue-radial-menu-container {
         &:hover {
-            background-color: rgba(255, 0, 0, 0.76);
+            background: rgba(255, 0, 0, 0.76);
             opacity: 0.8;
         }
     }
