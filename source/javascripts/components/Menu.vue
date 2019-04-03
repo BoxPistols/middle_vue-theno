@@ -1,6 +1,6 @@
 <template>
 <div id="menu">
-  <radial-menu style="background-color: #d7d7ff" :itemSize="50" :radius="150" :angle-restriction="90">
+  <radial-menu style="background-color: #d7d7ff" :itemSize="55" :radius="165" :angle-restriction="85">
     <radial-menu-item v-for="(item, index) in items" :key="index" style="" @click="() => handleClick(item)">
       <a v-bind:href=" 'https://xn--wckt73v.com/' + item" target="_blank">{{ item }}</a>
       <!-- <span>{{item}}</span> -->
@@ -8,7 +8,7 @@
   </radial-menu>
   <!-- <div style="color: rgba(0,0,0,0.6); margin-top: 16px;">{{ lastClicked }}</div> -->
   <!-- <div style="color: rgba(0,0,0,0.6); margin-top: 16px;">{{ title }}</div> -->
-  <span class="menuTitle">TheNo Menu</span>
+  <span class="menuTitle">Menu</span>
 
   <span class="otherLink">
     <a href="https://xn--pbk2cna1c.com/" target="_blank">Ggrks</a>
@@ -30,7 +30,7 @@ export default {
   },
   data() {
     return {
-      items: ['post-ito', 'thenote', 'nnkaigi', 'buster', 'wp'],
+      items: ['post-ito', 'thenote', 'nnkaigi', 'buster', 'unsp', 'wp'],
       lastClicked: 'click on!',
       title: "Click"
     }
@@ -79,17 +79,18 @@ export default {
     .menuTitle,
     .otherLink {
         position: absolute;
-        bottom: -24px;
-        right: -17px;
+        bottom: -23px;
+        right: 6px;
         white-space: nowrap;
         color: #e2e0e3;
         font-size: 14px;
         opacity: 0.9;
+        font-family: sans-serif;
     }
     .otherLink {
-        bottom: 60px;
-        right: -2px;
-        font-size: 20px;
+        bottom: 56px;
+        right: -6px;
+        font-size: 19px;
         a {
             color: #e2e0e3;
             padding: 3px 5px;
