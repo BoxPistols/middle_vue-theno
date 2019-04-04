@@ -11,7 +11,7 @@
   <span class="menuTitle">Menu</span>
 
   <span class="otherLink">
-    <a href="https://xn--pbk2cna1c.com/" target="_blank">Ggrks</a>
+    <a href="https://xn--pbk2cna1c.com/" target="_blank"><span>G</span><span>g</span><span>r</span><span>k</span><span>s</span></a>
   </span>
 </div>
 </template>
@@ -91,6 +91,29 @@ export default {
         bottom: 56px;
         right: -6px;
         font-size: 19px;
+        span {
+            vertical-align: text-bottom;
+            display: inline-block;
+            &:nth-child(1) {
+                color: #4484f7;
+                transform: scale(1.05, 1);
+            }
+            &:nth-child(2) {
+                color: #e94334;
+                transform: scale(0.9, 1);
+            }
+            &:nth-child(3) {
+                color: #fabc00;
+                transform: scale(1.08, 0.95);
+            }
+            &:nth-child(4) {
+                color: #36a84d;
+                transform: scale(0.9, 1);
+            }
+            &:nth-child(5) {
+                color: #e94334;
+            }
+        }
         a {
             color: #e2e0e3;
             padding: 3px 5px;
