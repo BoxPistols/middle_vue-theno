@@ -16,7 +16,7 @@ export default {
   name: 'mainComponent',
   data() {
     return {
-      title: 'ザ 脳',
+      title: 'ザ脳.com',
     }
   }
 }
@@ -48,15 +48,17 @@ header
   transform: translate(50%, 50%)
 
   h1
-    width: 3em
+    width: auto
     height: 1.4em
     margin-top: -0.8em
-    margin-left: -1.2em
+    margin-left: -2.1em
     color: #f5f5fb
     font-size: 8rem
     font-weight: 100
     display: flex
     z-index: 10
     display: block
-    text-shadow: 2px 2px 8px #666
+    text-shadow: 3px 3px 23px #a5ffb8
+    @media only screen and (max-width: 768px)
+      font-size: calc(3em + 2vw)
 </style>

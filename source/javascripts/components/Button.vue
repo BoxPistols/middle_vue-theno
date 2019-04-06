@@ -42,15 +42,16 @@ $(function() {
 
 <style lang="sass" scoped>
 .audio_wrap
-  background: #eee
+  // background: #eee
+  width: 100px
   z-index: 10
   display: block
+  position: absolute
+  right: 10px
+  top: 2px
 
 button.sound
   padding: .5em 1em
-  position: absolute
-  right: 2px
-  top: 2px
   color: #222
   background: rgba(255, 0, 0, 0.76)
   cursor: pointer
