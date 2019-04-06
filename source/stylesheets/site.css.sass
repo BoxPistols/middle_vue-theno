@@ -1,5 +1,16 @@
 @charset "UTF-8"
 
+// Var
+.fx
+  display: flex
+.sp-none
+  @media only screen and (max-width: 768px)
+    display: none
+.pc-none
+  @media only screen and (min-width: 769px)
+    display: none
+
+
 html
   box-sizing: border-box
   font-family: serif
@@ -26,6 +37,7 @@ body
   perspective: 180vmin
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif
 
+
 .flexbox-container
   display: flex
 
@@ -48,24 +60,29 @@ footer
     span
       @media only screen and (max-width: 768px)
         display: block
-        font-size: 11px
+        font-size: 14px
     a
       color: rgba(85, 157, 217, 0.89)
       &:hover
         background-color: rgba(255, 255, 255, 0.2)
 
 .infoArea
+  border: 1px solid #444
   position: absolute
   max-width: 800px
   width: 80%
   max-height: 60px
+  padding: 1em
   bottom: 80px
   overflow-y: scroll
   font-size: small
   line-height: 1.2
   color: #666
-  transition: .2s
+  transition: .4s
   &:hover
     color: #ccc
+    max-height: 160px
+    transition: .8s
   @media only screen and (max-width: 768px)
     left: 10px
+    width: 75%

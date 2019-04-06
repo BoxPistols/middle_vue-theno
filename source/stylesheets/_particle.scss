@@ -1,0 +1,87 @@
+main {
+  position: relative;
+  width: 40vmin;
+  height: 40vmin;
+  animation: 5s linear infinite rotate;
+  margin: -40px 0 50px;
+  z-index: -1;
+  @media only screen and (max-width: 768px) {
+    width: 50vmin;
+    height: 50vmin;
+  }
+}
+
+nav.nav {
+  position: absolute;
+  top: 2%;
+  font-size: 2em;
+}
+@media only screen and (max-width: 767px) {
+  $count: 16;
+  @for $i from 1 through $count {
+    $angle: 360 / $count * $i;
+
+    div.sir:nth-of-type(#{$i}) {
+      transform: rotate3d(0, 1, 0, #{$angle}deg);
+      animation: 9s linear infinite move#{$i + 1};
+      box-shadow: -2px -2px 8px rgb(150+$i*5, 150+$i*5, 200+$i*5);
+    }
+    @keyframes move#{$i+1} {
+      0% {
+        transform: rotate3d(0.25, 1, 0, #{$angle}deg);
+      }
+
+      50% {
+        transform: rotate3d(1, 0, 0, #{$angle + 180}deg);
+      }
+
+      100% {
+        transform: rotate3d(-0.25, -1, 0, #{$angle + 360}deg);
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  $count: 32;
+  @for $i from 1 through $count {
+    $angle: 360 / $count * $i;
+
+    div.sir:nth-of-type(#{$i}) {
+      transform: rotate3d(0, 1, 0, #{$angle}deg);
+      animation: 9s linear infinite move#{$i + 1};
+      box-shadow: -2px -2px 8px rgb(150+$i*5, 150+$i*5, 200+$i*5);
+    }
+    @keyframes move#{$i+1} {
+      0% {
+        transform: rotate3d(0.25, 1, 0, #{$angle}deg);
+      }
+
+      50% {
+        transform: rotate3d(1, 0, 0, #{$angle + 180}deg);
+      }
+
+      100% {
+        transform: rotate3d(-0.25, -1, 0, #{$angle + 360}deg);
+      }
+    }
+  }
+}
+
+div.sir {
+  color: #abc;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 120%;
+  opacity: 0.9;
+  border: 1px solid #cab;
+  border-radius: 50%;
+  z-index: -1;
+
+  &:nth-of-type(1) {
+    color: rgba(220, 16, 16, 0.85);
+    box-shadow: -4px -4px 12px #ff3d00;
+    font-size: 3em;
+  }
+}
